@@ -1,5 +1,7 @@
 # Armen.github.io
 
+### Деловая игра (https://github.com/modernClown/Armen.github.io/wiki/Seminar-3)
+
 ### Домашнее задание по [семинару №1](https://github.com/stankin/design-part-1/wiki/sem1)
 
 ### Домашнее задание по [семинару №2](https://github.com/stankin/design-part-1/wiki/sem2)
