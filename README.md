@@ -6,7 +6,7 @@
 
 ### Домашнее задание по [семинару №2](https://github.com/stankin/design-part-1/wiki/sem2)
 
-### Домашнее задание по [семинару №3](https://github.com/stankin/design-part-1/wiki/sem3)
+### Домашнее задание по [семинару №3](https://github.com/modernClown/Armen.github.io/wiki/Seminar-3)
 
 ### Домашнее задание по [семинару №4](https://github.com/stankin/design-part-1/wiki/sem4)
 
