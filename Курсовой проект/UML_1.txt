@@ -1,0 +1,35 @@
+@startuml
+skinparam monochrome true
+hide circle
+hide methods
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Пользователь_системы"
+actor "Менеджер"
+actor "Модуль_менеджера" 
+actor "Программный_модуль" 
+
+Модуль_менеджера --> Программный_модуль
+
+rectangle Приложение {
+
+usecase case1 as "Получить данные об автомобиле"
+usecase case2 as "Подтвердить данные об автомобиле"
+usecase case5 as "Составить заказ"
+usecase case3 as "Получить данные о клиенте"
+usecase case4 as "Подтвердить данные о клиенте"
+ Пользователь_системы <-- Менеджер
+ Менеджер -- case1
+ (case1) .> (case2)
+ (case2) .> (case5)  
+ (case4) .> (case5) 
+ (case3) .> (case4)
+ case1 -- Модуль_менеджера 
+ case2 -- Модуль_менеджера
+ case3 -- Модуль_менеджера
+ case4 -- Модуль_менеджера 
+ case5 -- Модуль_менеджера 
+}
+
+@enduml
