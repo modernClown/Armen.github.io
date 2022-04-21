@@ -1,0 +1,49 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+hide circle
+hide methods
+
+class car {
+   car_id : int
+   car_name : varchar
+   car_date : date
+   car_vin  : varchar
+   car_mileage : int
+}
+
+class client {
+   client_id : id
+   client_full_name : varchar
+   client_phone_number : int
+   client_date_of_birth : date
+   client_passport : varchar
+}
+
+class employee {
+   employee_id : id
+   employee_full_name : varchar
+   employee_date_of_birth : date
+   employee_position : varchar
+
+}
+
+
+class order {
+   order_id : int
+   client_full_name : varchar 
+   car_name : varchar
+   car_date : date
+
+}
+
+employee --> client
+employee --> car
+client--> order
+car --> order
+
+
+@enduml
