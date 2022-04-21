@@ -1,0 +1,24 @@
+@startuml
+skinparam component {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam interface {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+component [Сервер] as DB
+component [Клиент] as PR
+component [Приложение] as Server
+
+() "T-SQL" as L1
+() ".NET Framework" as L2
+
+PR - L2
+L2 - Server
+Server - L1
+L1 - DB
+@enduml
