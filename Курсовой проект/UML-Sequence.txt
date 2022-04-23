@@ -1,0 +1,38 @@
+@startuml
+skinparam monochrome true
+
+actor "Старший менеджер" as user
+participant "Клиент приложения" as cli
+database "База данных" as db
+
+activate user
+activate cli
+
+user -> cli: Нажатие кнопки "Оформить новый заказ"
+cli -> user: Открытие окна формы "Новый заказ"
+
+user -> cli: Нажатие кнопки "Новый клиент"
+cli -> user: Открытие окна формы "Новый клиент"
+
+cli-> db: Внести данные о клиенте
+activate db
+db-> cli: 
+deactivate db
+
+user -> cli: Нажатие кнопки "Автомобиль"
+cli -> user: Открытие окна формы "Автомобиль"
+
+cli-> db: Внести данные об автомобиле
+activate db
+db-> cli:
+deactivate db
+
+cli-> db: Оформить заказ
+activate db
+db-> cli:
+deactivate db
+cli -> user: "Заказ сформирован"
+
+@enduml
+
+
